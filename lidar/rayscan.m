@@ -1,6 +1,6 @@
 function lmax=rayscan(robot,q,colobj,phi)
 
-rz=robot.Z;
+rz=0;
 ex=[1;0;0];ey=[0;1;0];ez=[0;0;1];zv=[0;0;0];
 l0=2;r=.01;
 lmax=bisectsearch(l0,colobj,r,q,rz,phi);

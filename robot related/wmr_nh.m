@@ -12,7 +12,7 @@
 % utrue=true input (with noise and disturbance)
 %
 
-function [qnext,utrue]=wmr(q,u,ts,wcov)
+function [qnext,utrue]=wmr_nh(q,u,ts,wcov)
 
 m=length(u);
 %w=zeros(size(u));

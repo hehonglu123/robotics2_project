@@ -15,7 +15,7 @@ function l=scanpattern(q,robot,colobj,M,nofig)
 phi=2*pi*[0:M-1]/M;
 
 r=.01;
-rz=robot.Z;
+rz=0;
 
 for i=1:M;
     l(i)=rayscan(robot,q,colobj,phi(i));

@@ -15,7 +15,7 @@ N_range=size(pL,2);N_bearing=size(pB,2);N_odo=2;
 % propagate the state via dead reckoning to the next state using current
 % estimate 
 
-[qbarnext,utrue]=wmr(qhat,u,ts,(zeros(size(wcov))));
+[qbarnext,utrue]=wmr_nh(qhat,u,ts,(zeros(size(wcov))));
 qbarnext=qbarnext';
 
 yind=[(1:N_range) (N_range+N_odo+1:N_range+N_odo+N_bearing)];

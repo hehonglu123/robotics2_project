@@ -4,7 +4,6 @@
 % Given y and robot kinematics, estimate the robot position and orientation
 %
 function qhat=pose_est(y,pL,pB,N_scan,wcov,vcov)
-
 % use range sensors first
 N_range=size(pL,2);N_bearing=size(pB,2);N_odo=2;
 

@@ -10,7 +10,7 @@ N_range=size(pL,2);N_bearing=size(pB,2);N_odo=2;
 y=zeros(N_range+N_odo+N_bearing+N_scan,1);
 
 % height of the sensor on robot
-rz=robot.Z/2;
+rz=0;
 ez=[0;0;1];
 
 % position and orientation
